@@ -1,308 +1,374 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
-
+    email: 'dev.kashifnaeem@gmail.com',
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
-
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    emailBody: 'Hi Kashif, I am reaching out to you because...',
+    oldPortfolio: '',
+    upworkProfile: '',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/kash-if-Naeem' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/kashifnaeem-dev/' },
+    // Add more links as needed
 ];
 
 export const MY_STACK = {
     frontend: [
-        {
-            name: 'JavaScript',
-            icon: '/logo/js.png',
-        },
-        {
-            name: 'TypeScript',
-            icon: '/logo/ts.png',
-        },
-        {
-            name: 'React',
-            icon: '/logo/react.png',
-        },
-        {
-            name: 'Next.js',
-            icon: '/logo/next.png',
-        },
-        {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
-        },
+        { name: 'JavaScript', icon: '/logo/js.png' },
+        { name: 'TypeScript', icon: '/logo/ts.png' },
+        { name: 'React', icon: '/logo/react.png' },
+        { name: 'Angular', icon: '/logo/angular2.png' },
+        { name: 'Bootstrap', icon: '/logo/bootstrap.svg' },
+        { name: 'HTML', icon: '/logo/html.jpg' },
+        { name: 'CSS', icon: '/logo/css3.png' },
     ],
     backend: [
-        {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
+        { name: 'C#', icon: '/logo/csharp.png' },
+        { name: '.NET', icon: '/logo/dotnet.png' },
+        { name: 'Node.js', icon: '/logo/node.png' },
+        { name: 'Express.js', icon: '/logo/express.png' },
     ],
     database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
+        { name: 'MySQL', icon: '/logo/mysql.svg' },
+        { name: 'MongoDB', icon: '/logo/mongodb.svg' },
+    ],
+    Testing: [
+        { name: 'Cypress', icon: '/logo/cypress.svg' },
+        { name: 'Selenium', icon: '/logo/selenium.png' },
+        { name: 'Mocha', icon: '/logo/mocha.png' },
+        { name: 'Chai', icon: '/logo/chai.png' },
     ],
     tools: [
-        {
-            name: 'Git',
-            icon: '/logo/git.png',
-        },
-        {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
-        },
-        {
-            name: 'AWS',
-            icon: '/logo/aws.png',
-        },
+        { name: 'Git', icon: '/logo/git.png' },
+        { name: 'Azure DevOps', icon: '/logo/azure.jpeg' },
+        { name: 'Postman', icon: '/logo/postman.png' },
+        { name: 'GitHub Copilot', icon: '/logo/github-copilot.png' },
+        { name: 'Claude AI', icon: '/logo/claudeai.png' },
+        { name: 'ChatGPT', icon: '/logo/chatgpt.png' },
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
+        title: 'Allianz Inspection Hub',
+        slug: 'inspection-hub',
+        liveUrl: 'https://eng.inspectionhub.allianz.co.uk/',
         year: 2025,
         description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
+      A comprehensive inspection management platform built for Allianz field engineers to streamline on-site inspection workflows, reporting, and data visualization.<br/><br/>
+
       Key Features:<br/>
       <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
+        <li>🗺️ Google Maps Integration: Location-based inspection assignment and field navigation</li>
+        <li>📋 Inspection Workflows: Structured multi-step inspection forms with validation</li>
+        <li>📊 Reporting & Analytics: Dynamic report generation with data visualization components</li>
+        <li>♿ Accessibility Compliant: Keyboard navigation, breadcrumbs, ARIA patterns, and responsive layouts</li>
+        <li>⚡ Performance Optimized: Infinite scrolling, optimized API consumption, lazy loading</li>
       </ul><br/>
-      
+
       Technical Highlights:
       <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
+        <li>Built with Angular 13 and TypeScript using GraphQL (Apollo Client) for efficient data fetching</li>
+        <li>Integrated Google Maps API for field engineer location tracking and task assignment</li>
+        <li>Automated test coverage with Jasmine/Karma (unit) and Cypress (E2E)</li>
+        <li>Maintained CI/CD pipelines in Azure DevOps using YAML</li>
       </ul>
       `,
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
+      Software Developer (Frontend Focused)<br/>
+      Contributed across the full stack:
       <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
+        <li>🎨 Frontend: Built and maintained Angular components with TypeScript</li>
+        <li>🔗 API Layer: Integrated GraphQL queries/mutations via Apollo Client</li>
+        <li>🗺️ Maps: Implemented Google Maps features for field inspection workflows</li>
+        <li>✅ Testing: Wrote unit tests (Jasmine/Karma) and E2E tests (Cypress)</li>
+        <li>⚙️ DevOps: Maintained Azure DevOps CI/CD pipelines with YAML</li>
+        <li>♿ Accessibility: Led keyboard navigation and WCAG compliance improvements</li>
       </ul>
       `,
         techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
+            'Angular 13',
+            'TypeScript',
+            'GraphQL',
+            'Apollo Client',
+            'Google Maps API',
+            'Jasmine',
+            'Karma',
+            'Cypress',
+            'Azure DevOps',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
+        thumbnail: '/projects/IH1.png',
+        longThumbnail: '/projects/IH2.png',
+        images: ['/projects/IH1.png', '/projects/IH2.png'],
     },
-    {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
 
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+    {
+        title: 'Kinetic Inspect',
+        slug: 'kinetic-inspect-mobile',
+        liveUrl: '',
+        year: 2025,
+        description: `
+      A cross-platform mobile inspection application built with Flutter, enabling field engineers to conduct inspections, generate reports, and sync data seamlessly on both iOS and Android.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>📱 Cross-Platform: Single codebase running natively on iOS and Android via Flutter</li>
+        <li>📋 Inspection Workflows: Step-by-step guided inspection process with form validation</li>
+        <li>📄 Report Generation: Automated PDF report creation from completed inspections</li>
+        <li>🔌 API Integration: Connected to .NET backend APIs and SQL Server for data persistence</li>
+        <li>🧪 API Validation: Tested and validated all endpoints using Postman</li>
+      </ul><br/>
+
+      Technical Highlights:
+      <ul>
+        <li>Developed using Flutter (Dart) for true cross-platform performance</li>
+        <li>Integrated with .NET REST APIs for inspection data management</li>
+        <li>Implemented offline-capable inspection workflows with local state management</li>
+        <li>Validated backend API contracts and responses using Postman collections</li>
+      </ul>
+      `,
+        role: `
+      Mobile Developer<br/>
+      Led mobile development end-to-end:
+      <ul>
+        <li>📱 Flutter Development: Built all screens and inspection workflow UI components</li>
+        <li>🔗 API Integration: Connected Flutter app to .NET REST APIs and SQL Server</li>
+        <li>📄 Report Generation: Implemented automated inspection report export feature</li>
+        <li>🧪 Testing: Validated API endpoints and data flows using Postman</li>
+        <li>🚀 Deployment: Managed builds for both iOS and Android platforms</li>
+      </ul>
+      `,
+        techStack: [
+            'Flutter',
+            'Dart',
+            '.NET APIs',
+            'SQL Server',
+            'REST APIs',
+            'Postman',
+        ],
+        thumbnail: '/projects/KIM.jpeg',
+        longThumbnail: '/projects/KIM2.jpeg',
+        images: ['/projects/KIM.jpeg', '/projects/KIM2.jpeg'],
+    },
+
+    {
+        title: 'Smart Real Estate MLSP',
+        slug: 'smart-real-estate',
+        liveUrl: '',
+        year: 2025,
+        description: `
+      A scalable real estate platform built on the ABP Framework, enabling property listing, visualization, and management with advanced role-based access and mapping features.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>🏠 Property Listings: Organized property catalog with filtering and search capabilities</li>
+        <li>🗺️ Maps Integration: Google Maps and Google Directions APIs for property visualization and navigation</li>
+        <li>🔐 Role-Based Access: Dynamic UI rendering based on user roles and permissions</li>
+        <li>⚡ Performance Optimized: Lazy loading, optimized API consumption, and component-based architecture</li>
+        <li>✅ Tested: Unit tests with Jasmine/Karma ensuring component reliability</li>
+      </ul><br/>
+
+      Technical Highlights:
+      <ul>
+        <li>Built with Angular 16 and TypeScript on the ABP (ASP.NET Boilerplate) architecture</li>
+        <li>Integrated Google Maps and Directions APIs for property location features</li>
+        <li>Applied lazy loading for improved initial load performance</li>
+        <li>Implemented role-based access control with dynamic UI rendering per user role</li>
+      </ul>
+      `,
+        role: `
+      Software Engineer<br/>
+      Full frontend ownership:
+      <ul>
+        <li>🎨 Frontend: Built scalable Angular 16 modules with TypeScript</li>
+        <li>🗺️ Maps: Integrated Google Maps and Directions APIs for property features</li>
+        <li>🔐 Auth & Roles: Implemented role-based access controls and dynamic UI rendering</li>
+        <li>⚡ Performance: Applied lazy loading and component-based architecture patterns</li>
+        <li>✅ Testing: Wrote unit tests with Jasmine/Karma for component stability</li>
+      </ul>
+      `,
+        techStack: [
+            'Angular 16',
+            'TypeScript',
+            'REST APIs',
+            'ABP Framework',
+            'Google Maps API',
+            'Google Directions API',
+            'Jasmine',
+            'Karma',
+        ],
+        thumbnail: '/projects/mls1.png',
+        longThumbnail: '/projects/mls2.png',
+        images: ['/projects/mls1.png', '/projects/mls2.png'],
+    },
+
+    {
+        title: 'Slaxy by Alex',
+        slug: 'slaxy',
+        liveUrl: 'https://slaxy.de/',
+        year: 2020,
+        description: `
+      A custom Shopify e-commerce store built for the German market, featuring a responsive storefront, third-party plugin integrations, and a polished user experience across all devices.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>🛒 Custom Storefront: Tailored Shopify theme with brand-specific UI design</li>
+        <li>📱 Fully Responsive: Optimized layout across desktop, tablet, and mobile</li>
+        <li>🔌 Third-Party Plugins: Integrated marketing tools, payment gateways, and app extensions</li>
+        <li>🧪 Manual Testing: Cross-device and cross-browser UI validation</li>
+        <li>🚀 SEO Optimized: Improved page structure and performance for search discoverability</li>
+      </ul><br/>
+
+      Technical Highlights:
+      <ul>
+        <li>Built on Shopify with custom Liquid templating and CSS/JS customizations</li>
+        <li>Integrated third-party payment gateways and marketing plugins</li>
+        <li>Performed thorough manual testing across browsers and device sizes</li>
+        <li>Optimized page performance and SEO structure for the German market</li>
+      </ul>
+      `,
+        role: `
+      Shopify Developer<br/>
+      End-to-end Shopify development:
+      <ul>
+        <li>🎨 Theme Development: Customized Shopify Liquid templates and CSS/JS</li>
+        <li>🔌 Integrations: Added third-party apps, payment gateways, and marketing tools</li>
+        <li>🧪 QA: Conducted cross-browser and responsive UI testing</li>
+        <li>🚀 Performance: Resolved production issues and optimized page load speed</li>
+        <li>📈 SEO: Improved page structure and metadata for search engines</li>
+      </ul>
+      `,
+        techStack: [
+            'Shopify',
+            'Liquid',
+            'JavaScript',
+            'CSS3',
+            'Third-Party APIs',
+            'Payment Gateways',
+        ],
+        thumbnail: '',
+        longThumbnail: '',
+        images: [],
+    },
+
+    {
+        title: 'Eliquids Store',
+        slug: 'eliquids',
+        liveUrl: '',
+        year: 2020,
+        description: `
+      A Shopify-based e-commerce store for an eliquids/vape brand, featuring a fully customized storefront with product catalog management, responsive design, and seamless third-party integrations.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>🛒 Product Catalog: Organized eliquid product listings with variant management</li>
+        <li>📱 Responsive Design: Consistent shopping experience across all screen sizes</li>
+        <li>🔌 App Integrations: Integrated third-party Shopify apps and marketing tools</li>
+        <li>💳 Payment Setup: Configured payment gateway for smooth checkout flow</li>
+        <li>🧪 Cross-Browser Testing: Validated UI behavior across multiple browsers and devices</li>
+      </ul><br/>
+
+      Technical Highlights:
+      <ul>
+        <li>Customized Shopify theme using Liquid templating with brand-specific styling</li>
+        <li>Integrated third-party Shopify apps for enhanced store functionality</li>
+        <li>Performed manual testing and UI validation for consistent UX</li>
+        <li>Optimized product page performance and SEO structure</li>
+      </ul>
+      `,
+        role: `
+      Shopify Developer<br/>
+      Full store development and QA:
+      <ul>
+        <li>🎨 Theme Customization: Built and styled Shopify Liquid templates</li>
+        <li>🔌 Integrations: Connected third-party apps and payment solutions</li>
+        <li>🧪 Testing: Cross-browser and responsive testing for UI consistency</li>
+        <li>⚡ Optimization: Improved page speed and SEO for product discoverability</li>
+      </ul>
+      `,
+        techStack: [
+            'Shopify',
+            'Liquid',
+            'JavaScript',
+            'CSS3',
+            'Third-Party Apps',
+            'Payment Gateways',
+        ],
+        thumbnail: '/projects/eliquids1.png',
+        longThumbnail: '/projects/eliquids2.png',
+        images: ['/projects/eliquids1.png', '/projects/eliquids2.png'],
+    },
+
+    {
+        title: 'YaleTown Floor',
+        slug: 'yaletown-floor',
+        liveUrl: '',
+        year: 2021,
+        description: `
+      A Shopify-based e-commerce platform for a flooring brand, enhanced with additional custom features, third-party integrations, and comprehensive cross-browser testing for a consistent shopping experience.<br/><br/>
+
+      Key Features:<br/>
+      <ul>
+        <li>🪵 Product Showcase: Visual flooring product catalog with detailed variant options</li>
+        <li>📱 Responsive Layout: Fully tested across desktop, tablet, and mobile devices</li>
+        <li>🔌 Third-Party Integrations: Extended store functionality with Shopify apps and plugins</li>
+        <li>🌐 Cross-Browser Support: Validated consistent behavior across all major browsers</li>
+        <li>⚡ Performance: Optimized page load times and UI component rendering</li>
+      </ul><br/>
+
+      Technical Highlights:
+      <ul>
+        <li>Customized existing Shopify theme with additional features and styling</li>
+        <li>Integrated third-party Shopify apps for enhanced store capabilities</li>
+        <li>Conducted thorough cross-browser and responsive testing</li>
+        <li>Resolved UI inconsistencies and improved overall performance</li>
+      </ul>
+      `,
+        role: `
+      Shopify Developer<br/>
+      Feature development and QA:
+      <ul>
+        <li>🎨 Customization: Extended existing theme with new features via Liquid/JS/CSS</li>
+        <li>🔌 Integrations: Configured third-party plugins and Shopify app integrations</li>
+        <li>🧪 Testing: Comprehensive cross-browser and responsive testing</li>
+        <li>🐛 Bug Fixes: Resolved production issues and UI inconsistencies</li>
+        <li>⚡ Performance: Improved page load speed and rendering efficiency</li>
+      </ul>
+      `,
+        techStack: [
+            'Shopify',
+            'Liquid',
+            'JavaScript',
+            'CSS3',
+            'Third-Party Apps',
+        ],
+        thumbnail: '/projects/yaletown1.png',
+        longThumbnail: '/projects/yaletown2.png',
+        images: ['/projects/yaletown1.png', '/projects/yaletown2.png'],
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
-    },
-    {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        title: 'Software Engineer',
+        company: 'Contour Software',
+        duration: 'Jan 2022 - Present',
     },
     {
         title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        company: 'SmartMLSP',
+        duration: 'Nov 2022 - Oct 2025',
+    },
+    {
+        title: 'Full Stack Developer',
+        company: 'Gaper.io',
+        duration: 'Aug 2021 - Dec 2021',
+    },
+    {
+        title: 'Shopify Developer (Freelance)',
+        company: 'Fiverr',
+        duration: 'Jan 2020 - July 2021',
     },
 ];
