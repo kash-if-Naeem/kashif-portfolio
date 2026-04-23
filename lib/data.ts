@@ -26,7 +26,6 @@ export const MY_STACK = {
     ],
     backend: [
         { name: 'C#', icon: '/logo/csharp.png' },
-        { name: '.NET', icon: '/logo/dotnet.png' },
         { name: 'Node.js', icon: '/logo/node.png' },
         { name: 'Express.js', icon: '/logo/express.png' },
     ],
@@ -367,8 +366,8 @@ export const MY_EXPERIENCE = [
         duration: 'Aug 2021 - Dec 2021',
     },
     {
-        title: 'Shopify Developer (Freelance)',
-        company: 'Fiverr',
-        duration: 'Jan 2020 - July 2021',
+        title: 'Associate Software Engineer',
+        company: 'Volpea Solutions',
+        duration: 'July 2020 - July 2021',
     },
 ];
